@@ -1,9 +1,5 @@
 const Stopwatch = require('statman-stopwatch');
-var _ = require("underscore");
-
 const axios = require('axios');
-var os = require('os');
-
 const stopwatch = new Stopwatch();
 
 
