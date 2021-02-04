@@ -1,3 +1,3 @@
 FROM node:7
-ADD api.js /api.js
-ENTRYPOINT [ "node", "api.js" ]
+ADD app.js /app.js
+ENTRYPOINT [ "node", "app.js" ]
