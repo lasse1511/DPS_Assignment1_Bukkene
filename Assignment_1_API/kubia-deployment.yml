@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodeweb
+  labels:
+    app: nodeweb
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nodeweb
+  template:
+    metadata:
+      labels:
+        app: nodeweb
+    spec:
+      containers:
+      - name: nodeweb
+        image: hackbuhl/nodeapi
+        ports:
+        - containerPort: 80
